@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Twitter, Linkedin, Mail } from 'lucide-react';
+import { Github, Twitter, Linkedin, Mail, MailOpenIcon } from 'lucide-react';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -11,12 +11,12 @@ const Footer: React.FC = () => {
           
           <div className="text-center md:text-left">
             <p className="text-slate-500 text-sm font-mono">
-              &copy; {currentYear} zumar.dev
+              &copy; {currentYear} buildapptech.dev
             </p>
           </div>
 
           <div className="flex space-x-6">
-            <a href="#" className="text-slate-500 hover:text-blue-400 transition-colors transform hover:-translate-y-1 duration-200">
+            {/* <a href="#" className="text-slate-500 hover:text-blue-400 transition-colors transform hover:-translate-y-1 duration-200">
               <span className="sr-only">GitHub</span>
               <Github className="h-5 w-5" />
             </a>
@@ -27,8 +27,8 @@ const Footer: React.FC = () => {
             <a href="#" className="text-slate-500 hover:text-blue-400 transition-colors transform hover:-translate-y-1 duration-200">
               <span className="sr-only">Twitter</span>
               <Twitter className="h-5 w-5" />
-            </a>
-            <a href="mailto:hello@example.com" className="text-slate-500 hover:text-blue-400 transition-colors transform hover:-translate-y-1 duration-200">
+            </a> */}
+            <a href="mailto:buildapptech@gmail.com" className="text-slate-500 hover:text-blue-400 transition-colors transform hover:-translate-y-1 duration-200">
               <span className="sr-only">Email</span>
               <Mail className="h-5 w-5" />
             </a>

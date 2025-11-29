@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Code2, Layout, Smartphone, Mail } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
+import ImageCompany from '../image/logo.jpg';
 
 const Home: React.FC = () => {
   const { t } = useLanguage();
@@ -57,23 +58,26 @@ const Home: React.FC = () => {
 
             {/* Right: Coding Image (Circular) */}
             <div className="opacity-0 animate-slide-up-delay-2 relative order-1 md:order-2 mb-12 md:mb-0 flex justify-center md:justify-end">
-              <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-[28rem] lg:h-[28rem] aspect-square rounded-full overflow-hidden border-4 border-slate-800/80 shadow-2xl shadow-blue-500/20 group">
-                 {/* Image Overlay Gradient */}
-                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent z-10"></div>
-                 
-                 {/* The Image */}
-                 <img 
-                    src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop" 
+              <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-[28rem] lg:h-[28rem] aspect-square">
+                {/* Circular Image Container */}
+                <div className="w-full h-full rounded-full overflow-hidden border-4 border-slate-800/80 shadow-2xl shadow-blue-500/20 group">
+                  {/* Image Overlay Gradient */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent z-10"></div>
+                  
+                  {/* The Image */}
+                  <img 
+                    src={ImageCompany} 
                     alt="Zumar coding on laptop" 
                     className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110"
-                 />
+                  />
+                </div>
 
-                 {/* Floating Badge - Pill Shape */}
-                 <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 bg-slate-900/90 backdrop-blur-md border border-slate-700 py-2 px-4 md:px-6 rounded-full flex items-center shadow-lg whitespace-nowrap hover:scale-105 transition-transform duration-300 cursor-default">
-                    <Code2 className="w-4 h-4 mr-2 text-blue-400" />
-                    <span className="text-sm text-slate-100 font-semibold mr-2">{t.home.codingBadge}</span>
-                    <span className="text-xs text-slate-500 font-mono border-l border-slate-700 pl-2 ml-1">web_app_v2</span>
-                 </div>
+                {/* Floating Badge - Positioned Outside at Bottom Edge */}
+                <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 z-30 bg-slate-900/95 backdrop-blur-md border-2 border-slate-700 py-2.5 px-5 md:px-7 rounded-full flex items-center shadow-2xl shadow-blue-500/30 whitespace-nowrap hover:scale-105 hover:border-blue-500/50 transition-all duration-300 cursor-default">
+                  <Code2 className="w-4 h-4 mr-2 text-blue-400" />
+                  <span className="text-sm text-slate-100 font-semibold mr-2">{t.home.codingBadge}</span>
+                  {/* <span className="text-xs text-slate-500 font-mono border-l border-slate-700 pl-2 ml-1">web_app_v2</span> */}
+                </div>
               </div>
               
               {/* Decorative elements behind image */}

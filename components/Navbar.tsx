@@ -23,7 +23,7 @@ const Navbar: React.FC = () => {
           {/* Logo */}
           <NavLink to="/" className="flex items-center space-x-2 group" onClick={closeMenu}>
             <TerminalSquare className="h-6 w-6 text-blue-500 group-hover:text-blue-400 transition-colors duration-300" />
-            <span className="font-mono font-bold text-lg tracking-tight text-slate-100 group-hover:text-blue-400 transition-colors">zumar.dev</span>
+            <span className="font-mono font-bold text-lg tracking-tight text-slate-100 group-hover:text-blue-400 transition-colors">buildapptech.dev</span>
           </NavLink>
 
           {/* Desktop Navigation */}
