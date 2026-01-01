@@ -2,9 +2,11 @@ import React from 'react';
 import ProjectCard from '../components/ProjectCard';
 import { Project } from '../types';
 import { useLanguage } from '../context/LanguageContext';
+import { useTheme } from '../context/ThemeContext';
 
 const Projects: React.FC = () => {
   const { t } = useLanguage();
+  const { isDark } = useTheme();
 
   const projectsData: Project[] = [
     {
@@ -64,10 +66,14 @@ const Projects: React.FC = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <div className="mb-12 animate-fade-in">
-        <h1 className="text-4xl md:text-5xl font-bold text-slate-100 mb-6 font-mono">
+        <h1 className={`text-4xl md:text-5xl font-bold mb-6 font-mono transition-colors ${
+          isDark ? 'text-slate-100' : 'text-gray-900'
+        }`}>
           {t.projects.title} <span className="text-blue-500">{t.projects.titleHighlight}</span>
         </h1>
-        <p className="text-xl text-slate-400 max-w-2xl">
+        <p className={`text-xl max-w-2xl transition-colors ${
+          isDark ? 'text-slate-400' : 'text-gray-600'
+        }`}>
           {t.projects.subtitle}
         </p>
       </div>
