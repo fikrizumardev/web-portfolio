@@ -46,13 +46,13 @@ const Home: React.FC = () => {
                   {t.home.btnExperience}
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Link>
-                <a
-                  href="mailto:buildapptech@gmail.com"
+                <Link
+                  to="/projects"
                   className="inline-flex justify-center items-center px-8 py-3.5 text-sm font-semibold text-slate-300 bg-slate-900 border border-slate-700 rounded-lg hover:bg-slate-800 hover:text-white hover:border-slate-600 transition-all duration-300 font-mono"
                 >
-                  <Mail className="mr-2 h-4 w-4" />
-                  buildapptech@gmail.com
-                </a>
+                  {t.home.btnProjects}
+                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </Link>
               </div>
             </div>
 
@@ -121,6 +121,27 @@ const Home: React.FC = () => {
                 {t.home.cards.ux.desc}
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section className="py-16 bg-slate-950/50 border-t border-slate-800/60">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="max-w-2xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-100 mb-4 font-mono">
+              Mari Bekerja Sama
+            </h2>
+            <p className="text-lg text-slate-400 mb-8">
+              Tertarik untuk berkolaborasi? Saya selalu terbuka untuk proyek menarik dan peluang baru.
+            </p>
+            <a
+              href="mailto:buildapptech@gmail.com"
+              className="inline-flex justify-center items-center px-8 py-4 text-sm font-semibold text-white bg-blue-600 rounded-lg hover:bg-blue-500 hover:-translate-y-0.5 transition-all duration-300 shadow-lg shadow-blue-500/25 group font-mono"
+            >
+              <Mail className="mr-2 h-5 w-5" />
+              buildapptech@gmail.com
+            </a>
           </div>
         </div>
       </section>

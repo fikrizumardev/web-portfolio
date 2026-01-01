@@ -1,12 +1,15 @@
 import React from 'react';
 import { ExternalLink, Github, Code } from 'lucide-react';
 import { Project } from '../types';
+import { useLanguage } from '../context/LanguageContext';
 
 interface ProjectCardProps {
   project: Project;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
+  const { t } = useLanguage();
+
   return (
     <div className="group bg-slate-900 rounded-xl overflow-hidden border border-slate-800 hover:border-blue-500/50 hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-300 flex flex-col h-full hover:-translate-y-1">
       <div className="relative overflow-hidden aspect-[16/9] bg-slate-800 group">
@@ -19,12 +22,24 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         <div className="absolute inset-0 bg-slate-950/60 group-hover:bg-slate-950/40 transition-colors duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100 backdrop-blur-[2px]">
             <div className="flex gap-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                 {project.demoUrl && (
-                    <a href={project.demoUrl} target="_blank" rel="noopener noreferrer" className="p-3 bg-blue-600 rounded-full text-white hover:bg-blue-500 transition-colors shadow-lg shadow-blue-500/30">
+                    <a 
+                      href={project.demoUrl} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="p-3 bg-blue-600 rounded-full text-white hover:bg-blue-500 transition-colors shadow-lg shadow-blue-500/30"
+                      title={t.projects.viewDemo}
+                    >
                         <ExternalLink className="w-5 h-5" />
                     </a>
                 )}
                 {project.repoUrl && (
-                    <a href={project.repoUrl} target="_blank" rel="noopener noreferrer" className="p-3 bg-slate-800 rounded-full text-white hover:bg-slate-700 transition-colors border border-slate-600">
+                    <a 
+                      href={project.repoUrl} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="p-3 bg-slate-800 rounded-full text-white hover:bg-slate-700 transition-colors border border-slate-600"
+                      title={t.projects.viewCode}
+                    >
                         <Github className="w-5 h-5" />
                     </a>
                 )}

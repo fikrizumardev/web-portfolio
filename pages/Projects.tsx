@@ -1,51 +1,74 @@
 import React from 'react';
 import ProjectCard from '../components/ProjectCard';
 import { Project } from '../types';
-
-const projectsData: Project[] = [
-  {
-    id: 1,
-    title: "E-Commerce Dashboard",
-    description: "A comprehensive analytics dashboard for online retailers. Features real-time data visualization using D3.js, inventory management, and sales reporting. Built with performance and accessibility in mind.",
-    tags: ["React", "TypeScript", "Tailwind", "D3.js"],
-    imageUrl: "https://picsum.photos/seed/dashboard/800/600",
-    demoUrl: "https://example.com",
-    repoUrl: "https://github.com",
-  },
-  {
-    id: 2,
-    title: "Task Master App",
-    description: "A collaborative project management tool inspired by Kanban boards. Supports drag-and-drop functionality, real-time updates via WebSockets, and team permissions.",
-    tags: ["Next.js", "Supabase", "Framer Motion"],
-    imageUrl: "https://picsum.photos/seed/task/800/600",
-    repoUrl: "https://github.com",
-  },
-  {
-    id: 3,
-    title: "AI Content Generator",
-    description: "An interface interacting with LLMs to generate marketing copy. Includes tone adjustment, history saving, and direct export to CMS platforms.",
-    tags: ["React", "OpenAI API", "Node.js"],
-    imageUrl: "https://picsum.photos/seed/ai/800/600",
-    demoUrl: "https://example.com",
-  },
-  {
-    id: 4,
-    title: "Weather Pivot",
-    description: "A hyper-local weather forecasting app using geolocation API. Provides hourly forecasts, severe weather alerts, and historical climate data comparisons.",
-    tags: ["Vue.js", "WeatherAPI", "Chart.js"],
-    imageUrl: "https://picsum.photos/seed/weather/800/600",
-    demoUrl: "https://example.com",
-    repoUrl: "https://github.com",
-  },
-];
+import { useLanguage } from '../context/LanguageContext';
 
 const Projects: React.FC = () => {
+  const { t } = useLanguage();
+
+  const projectsData: Project[] = [
+    {
+      id: 1,
+      title: t.projects.projects[0].title,
+      description: t.projects.projects[0].description,
+      tags: ["React", "TypeScript", "Tailwind", "D3.js"],
+      imageUrl: "https://picsum.photos/seed/dashboard/800/600",
+      demoUrl: "https://example.com",
+      repoUrl: "https://github.com",
+    },
+    {
+      id: 2,
+      title: t.projects.projects[1].title,
+      description: t.projects.projects[1].description,
+      tags: ["Next.js", "Supabase", "Framer Motion"],
+      imageUrl: "https://picsum.photos/seed/task/800/600",
+      repoUrl: "https://github.com",
+    },
+    {
+      id: 3,
+      title: t.projects.projects[2].title,
+      description: t.projects.projects[2].description,
+      tags: ["React", "OpenAI API", "Node.js"],
+      imageUrl: "https://picsum.photos/seed/ai/800/600",
+      demoUrl: "https://example.com",
+    },
+    {
+      id: 4,
+      title: t.projects.projects[3].title,
+      description: t.projects.projects[3].description,
+      tags: ["Vue.js", "WeatherAPI", "Chart.js"],
+      imageUrl: "https://picsum.photos/seed/weather/800/600",
+      demoUrl: "https://example.com",
+      repoUrl: "https://github.com",
+    },
+    {
+      id: 5,
+      title: t.projects.projects[4].title,
+      description: t.projects.projects[4].description,
+      tags: ["Laravel", "MySQL", "Vue.js", "Stripe"],
+      imageUrl: "https://picsum.photos/seed/restaurant/800/600",
+      demoUrl: "https://example.com",
+      repoUrl: "https://github.com",
+    },
+    {
+      id: 6,
+      title: t.projects.projects[5].title,
+      description: t.projects.projects[5].description,
+      tags: ["React", "Node.js", "MongoDB", "Socket.io"],
+      imageUrl: "https://picsum.photos/seed/learning/800/600",
+      demoUrl: "https://example.com",
+      repoUrl: "https://github.com",
+    },
+  ];
+
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <div className="mb-12 animate-fade-in">
-        <h1 className="text-4xl md:text-5xl font-bold text-slate-100 mb-6 font-mono">Featured <span className="text-blue-500">Projects</span></h1>
+        <h1 className="text-4xl md:text-5xl font-bold text-slate-100 mb-6 font-mono">
+          {t.projects.title} <span className="text-blue-500">{t.projects.titleHighlight}</span>
+        </h1>
         <p className="text-xl text-slate-400 max-w-2xl">
-          A collection of projects I've worked on, ranging from web applications to open-source libraries.
+          {t.projects.subtitle}
         </p>
       </div>
 

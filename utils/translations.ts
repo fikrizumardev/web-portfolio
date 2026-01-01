@@ -4,6 +4,7 @@ export const translations = {
       home: 'Home',
       about: 'About',
       experience: 'Experience',
+      projects: 'Projects',
     },
     home: {
       available: 'Available for freelance work',
@@ -11,6 +12,7 @@ export const translations = {
       heroTitleSuffix: 'web_future',
       intro: "Hi, I'm Zumar. A Full Stack Developer crafting clean, performant, and accessible digital experiences.",
       btnExperience: 'View Experience',
+      btnProjects: 'View Projects',
       btnEmail: 'Email Me',
       codingBadge: 'Coding',
       cards: {
@@ -64,6 +66,39 @@ export const translations = {
         }
       ]
     },
+    projects: {
+      title: 'Featured',
+      titleHighlight: 'Projects',
+      subtitle: 'A collection of projects I\'ve worked on, ranging from web applications to open-source libraries.',
+      viewDemo: 'View Demo',
+      viewCode: 'View Code',
+      projects: [
+        {
+          title: "E-Commerce Dashboard",
+          description: "A comprehensive analytics dashboard for online retailers. Features real-time data visualization using D3.js, inventory management, and sales reporting. Built with performance and accessibility in mind."
+        },
+        {
+          title: "Task Master App",
+          description: "A collaborative project management tool inspired by Kanban boards. Supports drag-and-drop functionality, real-time updates via WebSockets, and team permissions."
+        },
+        {
+          title: "AI Content Generator",
+          description: "An interface interacting with LLMs to generate marketing copy. Includes tone adjustment, history saving, and direct export to CMS platforms."
+        },
+        {
+          title: "Weather Pivot",
+          description: "A hyper-local weather forecasting app using geolocation API. Provides hourly forecasts, severe weather alerts, and historical climate data comparisons."
+        },
+        {
+          title: "Restaurant Management System",
+          description: "Complete restaurant management solution with POS integration, inventory tracking, staff scheduling, and customer relationship management. Built for scalability and ease of use."
+        },
+        {
+          title: "Learning Management Platform",
+          description: "Modern e-learning platform with video streaming, interactive quizzes, progress tracking, and certificate generation. Supports multiple content formats and mobile learning."
+        }
+      ]
+    },
     footer: {
       rights: 'Built with React & Tailwind.'
     }
@@ -73,6 +108,7 @@ export const translations = {
       home: 'Beranda',
       about: 'Tentang',
       experience: 'Pengalaman',
+      projects: 'Portofolio',
     },
     home: {
       available: 'Tersedia untuk proyek freelance',
@@ -80,6 +116,7 @@ export const translations = {
       heroTitleSuffix: 'masa_depan_web',
       intro: "Halo, saya Zumar. Full Stack Developer yang menciptakan pengalaman digital yang bersih, cepat, dan mudah diakses.",
       btnExperience: 'Lihat Pengalaman',
+      btnProjects: 'Lihat Portofolio',
       btnEmail: 'Email Saya',
       codingBadge: 'Ngoding',
       cards: {
@@ -130,6 +167,39 @@ export const translations = {
         {
           title: "Pengembangan API",
           description: "Pengembang API"
+        }
+      ]
+    },
+    projects: {
+      title: 'Portofolio',
+      titleHighlight: 'Proyek',
+      subtitle: 'Kumpulan proyek yang telah saya kerjakan, mulai dari aplikasi web hingga pustaka open-source.',
+      viewDemo: 'Lihat Demo',
+      viewCode: 'Lihat Kode',
+      projects: [
+        {
+          title: "Dashboard E-Commerce",
+          description: "Dashboard analitik komprehensif untuk pengecer online. Fitur visualisasi data real-time menggunakan D3.js, manajemen inventori, dan pelaporan penjualan. Dibangun dengan fokus pada performa dan aksesibilitas."
+        },
+        {
+          title: "Aplikasi Task Master",
+          description: "Alat manajemen proyek kolaboratif yang terinspirasi dari papan Kanban. Mendukung fungsi drag-and-drop, pembaruan real-time via WebSockets, dan izin tim."
+        },
+        {
+          title: "Generator Konten AI",
+          description: "Antarmuka yang berinteraksi dengan LLM untuk menghasilkan konten pemasaran. Termasuk penyesuaian nada, penyimpanan riwayat, dan ekspor langsung ke platform CMS."
+        },
+        {
+          title: "Weather Pivot",
+          description: "Aplikasi prakiraan cuaca hyper-lokal menggunakan API geolokasi. Menyediakan prakiraan per jam, peringatan cuaca buruk, dan perbandingan data iklim historis."
+        },
+        {
+          title: "Sistem Manajemen Restoran",
+          description: "Solusi manajemen restoran lengkap dengan integrasi POS, pelacakan inventori, penjadwalan staf, dan manajemen hubungan pelanggan. Dibangun untuk skalabilitas dan kemudahan penggunaan."
+        },
+        {
+          title: "Platform Manajemen Pembelajaran",
+          description: "Platform e-learning modern dengan streaming video, kuis interaktif, pelacakan kemajuan, dan pembuatan sertifikat. Mendukung berbagai format konten dan pembelajaran mobile."
         }
       ]
     },
