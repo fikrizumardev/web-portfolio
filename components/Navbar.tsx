@@ -7,7 +7,7 @@ import { useTheme } from '../context/ThemeContext';
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { t, language, toggleLanguage } = useLanguage();
-  const { theme, toggleTheme, isDark } = useTheme();
+  const { theme: _theme, toggleTheme, isDark } = useTheme();
 
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
@@ -16,7 +16,7 @@ const Navbar: React.FC = () => {
     { label: t.nav.home, path: '/' },
     { label: t.nav.about, path: '/about' },
     { label: t.nav.experience, path: '/experience' },
-    { label: t.nav.projects, path: '/projects' },
+    // { label: t.nav.projects, path: '/projects' },
   ];
 
   return (
