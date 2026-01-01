@@ -4,7 +4,7 @@ export const translations = {
       home: 'Home',
       about: 'About',
       experience: 'Experience',
-      projects: 'Projects',
+      // projects: 'Projects',
     },
     home: {
       available: 'Available for freelance work',
