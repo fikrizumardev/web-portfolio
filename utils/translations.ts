@@ -74,12 +74,12 @@ export const translations = {
       viewCode: 'View Code',
       projects: [
         {
-          title: "E-Commerce Dashboard",
-          description: "A comprehensive analytics dashboard for online retailers. Features real-time data visualization using D3.js, inventory management, and sales reporting. Built with performance and accessibility in mind."
+          title: "Sales Management System",
+          description: "Comprehensive sales management platform with customer relationship management, sales tracking, inventory control, and detailed reporting. Features real-time analytics, automated invoicing, and multi-user access control for efficient business operations."
         },
         {
-          title: "Task Master App",
-          description: "A collaborative project management tool inspired by Kanban boards. Supports drag-and-drop functionality, real-time updates via WebSockets, and team permissions."
+          title: "POS System",
+          description: "Modern point-of-sale system with barcode scanning, payment processing, receipt printing, and inventory synchronization. Includes sales analytics, customer management, and offline capability for uninterrupted business operations."
         },
         {
           title: "AI Content Generator",
@@ -178,12 +178,12 @@ export const translations = {
       viewCode: 'Lihat Kode',
       projects: [
         {
-          title: "Dashboard E-Commerce",
-          description: "Dashboard analitik komprehensif untuk pengecer online. Fitur visualisasi data real-time menggunakan D3.js, manajemen inventori, dan pelaporan penjualan. Dibangun dengan fokus pada performa dan aksesibilitas."
+          title: "Sistem Manajemen Penjualan",
+          description: "Platform manajemen penjualan komprehensif dengan manajemen hubungan pelanggan, pelacakan penjualan, kontrol inventori, dan pelaporan detail. Fitur analitik real-time, faktur otomatis, dan kontrol akses multi-user untuk operasi bisnis yang efisien."
         },
         {
-          title: "Aplikasi Task Master",
-          description: "Alat manajemen proyek kolaboratif yang terinspirasi dari papan Kanban. Mendukung fungsi drag-and-drop, pembaruan real-time via WebSockets, dan izin tim."
+          title: "Sistem POS",
+          description: "Sistem point-of-sale modern dengan pemindaian barcode, pemrosesan pembayaran, pencetakan struk, dan sinkronisasi inventori. Termasuk analitik penjualan, manajemen pelanggan, dan kemampuan offline untuk operasi bisnis tanpa gangguan."
         },
         {
           title: "Generator Konten AI",

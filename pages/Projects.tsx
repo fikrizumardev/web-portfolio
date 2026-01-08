@@ -14,7 +14,7 @@ const Projects: React.FC = () => {
       title: t.projects.projects[0].title,
       description: t.projects.projects[0].description,
       tags: ["React", "TypeScript", "Tailwind", "D3.js"],
-      imageUrl: "https://picsum.photos/seed/dashboard/800/600",
+      imageUrl: "../image/sms.jpeg",
       demoUrl: "https://example.com",
       repoUrl: "https://github.com",
     },
@@ -23,7 +23,7 @@ const Projects: React.FC = () => {
       title: t.projects.projects[1].title,
       description: t.projects.projects[1].description,
       tags: ["Next.js", "Supabase", "Framer Motion"],
-      imageUrl: "https://picsum.photos/seed/task/800/600",
+      imageUrl: "../image/pos_system.png",
       repoUrl: "https://github.com",
     },
     {
